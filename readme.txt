@@ -1,1 +1,1 @@
-Collection of some commonly used functions, to simplify the development of ASP
+一些常用的函数集合
