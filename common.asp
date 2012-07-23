@@ -172,7 +172,7 @@ End Function
 '写文本文件
 Function WriteFile(filename,text)
 	dim txtFile,FSO
-	IF(left(filename),1)="/" Then
+	IF left(filename,1)="/" Then
 		filename = server.Mappath(filename)
 	End IF
 	
@@ -189,7 +189,7 @@ End Function
 Function ReadFile(filename)
 	dim txtFile,FSO,tmp
 	Set FSO = Server.CreateObject("Scripting.FileSystemObject")
-	IF(left(filename),1)="/" Then
+	IF left(filename,1)="/" Then
 		filename = server.Mappath(filename)
 	End IF
 	If  Fso.FileExists(filename) Then
